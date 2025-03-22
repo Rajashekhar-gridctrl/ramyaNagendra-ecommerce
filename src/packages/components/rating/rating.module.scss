@@ -1,0 +1,10 @@
+@use '../../../scss/partials/_list';
+
+.rating {
+    @extend .list;
+    gap: 0.5rem;
+
+    &__icon {
+        color: var(--yellow-color);
+    }
+}
