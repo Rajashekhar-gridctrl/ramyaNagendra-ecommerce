@@ -3,15 +3,16 @@ import clsx from 'clsx';
 import styles from './button.module.scss';
 
 interface IButtonProps extends ButtonProps {
-    label: string;
+    label?: string;
     variant?: 'primary'
     isFullWidth?: boolean;
 }
 
 export const Button: React.FC<IButtonProps> = ({
-    label,
+    label = '',
     variant = 'primary',
     isFullWidth = false,
+    children,
     ...props
 }) => {
     const buttonClass = clsx(
@@ -21,7 +22,7 @@ export const Button: React.FC<IButtonProps> = ({
 
     return (
         <BootstrapButton className={buttonClass} {...props}>
-            {label}
+            {label} {children}
         </BootstrapButton>
     );
 };

@@ -7,4 +7,9 @@
     &__icon {
         color: var(--yellow-color);
     }
+    &__review--text{
+        font-size: 1rem;
+        font-family: var(--inter-fonts);
+        color: var(--foreground-sub-color);
+      }
 }

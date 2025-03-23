@@ -21,8 +21,8 @@ export const Rating: React.FC<IRating> = ({ fill = 0, totalCount = 5 }) => {
                             </svg>
                         )}
                 </span>
-            </li>)}
-
+            </li>)} <div className={styles['rating__review--text']}>(126) Review</div>
         </ul>
+       
     )
 }
