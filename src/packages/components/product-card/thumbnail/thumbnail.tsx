@@ -1,7 +1,6 @@
 import { FC } from "react"
 import Badge from "react-bootstrap/esm/Badge"
 import styles from "./thumbnail.module.scss"
-import clsx from "clsx"
 
 interface IProductCardThumbnail {
     src: string;
@@ -13,9 +12,7 @@ export const ProductCardThumbnail: FC<IProductCardThumbnail> = ({ discountBadge,
     return (
         <div className={styles.thumbnail}>
             <img
-                className={clsx(styles.thumbnail__img,
-                    'thumbnail'
-                )}
+                className='thumbnail'
                 src={src}
                 alt={alt}
             />

@@ -1,21 +1,26 @@
 import mangnifier from './assets/svg/mangnifier.svg'
 import './App.css'
-import { ProductCard, ProductCardAction, ProductCardBtn, ProductCardContent, ProductCardThumbnail, ProductCardIconCta, ResultsSummary } from './packages'
+import { ProductCard, ResultsSummary } from './packages'
+import productImg from './assets/products/IMG-20250320-WA0285.jpg'
 
 function App() {
-
   return (
     <>
-    <ResultsSummary first={1} last={1} total={1} />
+      <ResultsSummary first={2} last={2} total={2} />
+      <ProductCard isCollectionCard>
+        <ProductCard.Thumbnail src={productImg} />
+        <ProductCard.collectionContent />
+      </ProductCard>
+
       <ProductCard>
-        <ProductCardThumbnail src='https://ramyanagendra.com/cdn/shop/files/IMG_20241220_144033.jpg?v=1734769929&width=360' />
-        <ProductCardBtn label='Add to cart' />
-        <ProductCardContent />
-        <ProductCardAction>
-          <ProductCardIconCta>
+        <ProductCard.Thumbnail src={productImg} />
+        <ProductCard.Btn label='Add to cart' />
+        <ProductCard.Content />
+        <ProductCard.Action>
+          <ProductCard.IconCta>
             <img src={mangnifier} />
-          </ProductCardIconCta>
-        </ProductCardAction>
+          </ProductCard.IconCta>
+        </ProductCard.Action>
       </ProductCard>
     </>
   )
