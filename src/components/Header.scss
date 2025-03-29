@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3a6b35; // Green background
+    color: #fff;
+    padding: 1rem;
+  
+    .logo {
+        width: 100px; // Adjust as needed
+        height: 100px;
+        background: url('../assets/RMLogo.PNG') no-repeat center center / cover;
+    }
+  
+    .navigation {
+      display: flex;
+      gap: 1rem;
+  
+      a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          color: gold;
+        }
+      }
+    }
+  
+    .header-icons {
+      display: flex;
+      gap: 1rem;
+  
+      .icon {
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+  
+        &:hover {
+          color: gold;
+        }
+      }
+    }
+  }

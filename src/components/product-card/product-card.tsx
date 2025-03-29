@@ -1,5 +1,5 @@
 import styles from "./product-card.module.scss"
-import { Rating } from "../rating/rating"
+// import { Rating } from "../rating/rating"
 import { ProductCardAction } from "./action/action";
 import { Button } from "../button/button";
 import { ProductCardContent } from "./content/content";
