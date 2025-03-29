@@ -1,4 +1,4 @@
-import { Children, FC, PropsWithChildren } from 'react';
+import { FC, PropsWithChildren } from 'react';
 import styles from './icon-cta.module.scss';
 import { Button } from '../../../button/button';
 
