@@ -3,16 +3,18 @@
     border-radius: 5px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
     background: var(--body-background-color);
+
     @media only screen and (min-width: 375px) {
         max-width: 270px;
     }
 
     &:hover {
-        & .product__card--thumbnail__img {
-            transform: scale(1.02);
+        :global(.thumbnail) {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
         }
 
-        & .product__add--to__card {
+        :global(.cardCtaWrapper) {
             opacity: 1;
             visibility: visible;
             bottom: 14rem;
@@ -29,54 +31,26 @@
             }
 
         }
-    }
 
-    &--thumbnail {
-        position: relative;
-        overflow: hidden;
+        :global(.actions) {
+            opacity: 1;
+            visibility: visible;
+            bottom: 14rem;
+            animation: fadeIn .5s;
 
-        @media only screen and (min-width: 375px) {
-            max-width: 270px;
-            max-height: 260px;
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
         }
-        &__link {
-            position: relative;
-        }
-
-        &__img {
-            margin: 0 auto;
-            width: 100%;
+        .thumbnail__img {
+            transform: scale(1.02);
         }
     }
-
-}
-
-.product__add--to__card {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    // transition: .3s ease-in-out;
-
-    @media only screen and (max-width: 575px) {
-        bottom: 2.5rem;
-    }
-}
-
-.product__badge {
-    width: 4rem;
-    height: 2.2rem;
-    font-size: 1.2rem;
-    line-height: 2.6rem;
-    background: var(--secondary-color);
-    color: var(--text-white-color);
-    font-family: var(--inter-fonts);
-    position: absolute;
-    top: 1.5rem;
-    left: 0;
-    text-align: center;
-    border-radius: 0.4rem;
 }

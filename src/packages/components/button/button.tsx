@@ -2,9 +2,8 @@ import BootstrapButton, { ButtonProps } from 'react-bootstrap/Button';
 import clsx from 'clsx';
 import styles from './button.module.scss';
 
-interface IButtonProps extends ButtonProps {
+export interface IButtonProps extends ButtonProps {
     label?: string;
-    variant?: 'primary'
     isFullWidth?: boolean;
 }
 

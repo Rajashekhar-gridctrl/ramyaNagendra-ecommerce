@@ -1,7 +1,8 @@
+import { FC } from 'react';
 import { Rating } from '../../rating/rating';
 import styles from './content.module.scss';
 
-export const ProductCardContent = () => {
+export const ProductCardContent: FC = () => {
     return (
         <div className={`${styles.content} text-center`}>
             <Rating fill={1} totalCount={5} />

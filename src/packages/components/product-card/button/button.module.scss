@@ -1,0 +1,13 @@
+.cardCtaWrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+
+    @media only screen and (max-width: 575px) {
+        bottom: 2.5rem;
+    }
+}
