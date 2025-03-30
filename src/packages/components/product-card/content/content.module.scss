@@ -1,42 +1,42 @@
 .content {
-    position: relative;
-    padding: 2rem 1.5rem 1.5rem;
-    &--title {
-        margin-bottom: 0.8rem;
-        font-weight: 500;
-        color: var(--primary-color);
+  position: relative;
+  padding: 2rem 1.5rem 1.5rem;
+  &--title {
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+    color: var(--primary-color);
 
-        @media only screen and (max-width: 479px) {
-            line-height: 2.2rem;
-        }
-
-        &:hover {
-            color: var(--secondary-color);
-        }
+    @media only screen and (max-width: 479px) {
+      line-height: 2.2rem;
     }
+
+    &:hover {
+      color: var(--secondary-color);
+    }
+  }
 }
 
 .current__price {
-    color: var(--hover-color);
-    font-weight: 600;
-    line-height: 1.8rem;
-    font-family: var(--lato-fonts);
-    font-size: 1.4rem;
+  color: var(--hover-color);
+  font-weight: 600;
+  line-height: 1.8rem;
+  font-family: var(--lato-fonts);
+  font-size: 1.4rem;
 
-    @media only screen and (min-width: 768px) {
-        font-size: 1.5rem;
-    }
+  @media only screen and (min-width: 768px) {
+    font-size: 1.5rem;
+  }
 }
 
 .old__price {
-    color: var(--foreground-sub-color);
-    margin-left: 0.6rem;
-    line-height: 1.8rem;
-    font-family: var(--lato-fonts);
-    text-decoration: line-through;
-    font-size: 1.4rem;
+  color: var(--foreground-sub-color);
+  margin-left: 0.6rem;
+  line-height: 1.8rem;
+  font-family: var(--lato-fonts);
+  text-decoration: line-through;
+  font-size: 1.4rem;
 
-    @media only screen and (min-width: 768px) {
-        font-size: 1.5rem;
-    }
+  @media only screen and (min-width: 768px) {
+    font-size: 1.5rem;
+  }
 }

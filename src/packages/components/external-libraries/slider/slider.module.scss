@@ -1,0 +1,13 @@
+.sliderBtn {
+  &::before {
+    content: '';
+  }
+  z-index: 1;
+  width: 3.5rem;
+  height: 3.5rem;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  background: var(--body-background-color);
+  border-radius: 50%;
+  transition: var(--transition);
+}

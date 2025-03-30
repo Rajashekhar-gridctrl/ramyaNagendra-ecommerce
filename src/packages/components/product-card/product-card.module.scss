@@ -1,66 +1,67 @@
 .productCard {
-    position: relative;
-    border-radius: 5px;
-    overflow: hidden;
+  position: relative;
+  border: none;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
 
-    &__isCollectionCard {
-        max-width: 270px;
+  &__isCollectionCard {
+    max-width: 270px;
 
-        img {
-            margin: 0 auto 1.2rem;
-            max-width: 150px;
-        }
+    img {
+      margin: 0 auto 1.2rem;
+      max-width: 150px;
+    }
+  }
+
+  &__isProductCard {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    background: var(--body-background-color);
+    max-width: 270px;
+  }
+
+  &:hover {
+    :global(.collectionContent) > * {
+      color: var(--secondary-color);
     }
 
-    &__isProductCard {
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
-        background: var(--body-background-color);
-        max-width: 270px;
+    :global(.thumbnail) {
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
     }
 
-    &:hover {
+    :global(.cardCtaWrapper) {
+      opacity: 1;
+      visibility: visible;
+      bottom: 14rem;
+      animation: fadeIn 0.5s;
 
-        :global(.collectionContent)>* {
-            color: var(--secondary-color);
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
         }
 
-        :global(.thumbnail) {
-            transform: scale(1.1);
-            transition: transform 0.3s ease;
+        100% {
+          opacity: 1;
         }
-
-        :global(.cardCtaWrapper) {
-            opacity: 1;
-            visibility: visible;
-            bottom: 14rem;
-            animation: fadeIn .5s;
-
-            @keyframes fadeIn {
-                0% {
-                    opacity: 0;
-                }
-
-                100% {
-                    opacity: 1;
-                }
-            }
-        }
-
-        :global(.actions) {
-            opacity: 1;
-            visibility: visible;
-            bottom: 14rem;
-            animation: fadeIn .5s;
-
-            @keyframes fadeIn {
-                0% {
-                    opacity: 0;
-                }
-
-                100% {
-                    opacity: 1;
-                }
-            }
-        }
+      }
     }
+
+    :global(.actions) {
+      opacity: 1;
+      visibility: visible;
+      bottom: 14rem;
+      animation: fadeIn 0.5s;
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }

@@ -1,17 +1,17 @@
 .thumbnail {
+  position: relative;
+  overflow: hidden;
+  &__link {
     position: relative;
-    overflow: hidden;
-    &__link {
-        position: relative;
-    }
-    &__badge{
-        background: var(--secondary-color) !important;
-        color: var(--text-white-color);
-        font-family: var(--inter-fonts);
-        position: absolute;
-        top: 1.5rem;
-        left: 0;
-        text-align: center;
-        border-radius: 0.2rem;
-    }
+  }
+  &__badge {
+    background: var(--secondary-color) !important;
+    color: var(--text-white-color);
+    font-family: var(--inter-fonts);
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    text-align: center;
+    border-radius: 0.2rem;
+  }
 }

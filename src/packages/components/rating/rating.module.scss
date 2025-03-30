@@ -1,15 +1,15 @@
 @use '../../../scss/partials/_list';
 
 .rating {
-    @extend .list;
-    gap: 0.5rem;
+  @extend .list;
+  gap: 0.5rem;
 
-    &__icon {
-        color: var(--yellow-color);
-    }
-    &__review--text{
-        font-size: 1rem;
-        font-family: var(--inter-fonts);
-        color: var(--foreground-sub-color);
-      }
+  &__icon {
+    color: var(--yellow-color);
+  }
+  &__review--text {
+    font-size: 1rem;
+    font-family: var(--inter-fonts);
+    color: var(--foreground-sub-color);
+  }
 }
