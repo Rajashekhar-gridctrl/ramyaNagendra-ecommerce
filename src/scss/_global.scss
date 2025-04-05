@@ -4,9 +4,11 @@
 */
 
 
-:root{
-  --primary-color: #3C3836;
-  --secondary-color: #C97F5F;
+:root {
+  --primary-color: #597D35;
+  --secondary-color: #2e2c2c;
+  --font-highlight-color: #D4AF37;
+  --darker-primary-color: #466026;
   --hover-color: #ED1D24;
   --yellow-color: #FF9800;
   --foreground-color: #000000;
@@ -17,10 +19,10 @@
   --bg-offwhite-color: #F5F7FF;
   --bg-gray-color: #F5F8FF;
   --bg-black-color: #000000;
-  --bg-light-dark-color: #1a1818;;
+  --bg-light-dark-color: #1a1818;
   --border-color: #EDEDED;
-  --lato-fonts: 'Lato', serif;
-  --lato-fonts: 'Lato', serif;
+  --font-family-base: 'Poppins', sans-serif;
+  --font-family-heading: 'Lora', serif;
   --body-font-size: 1.5rem;
   --body-font-weight: 400;
   --body-line-height: 2.6rem;
@@ -28,7 +30,6 @@
   --transition: all 0.3s ease 0s;
   --container-fluid-offset: 12rem;
 }
-
 
 
 /* Common Style */
@@ -50,7 +51,7 @@ body {
 }
 
 body {
-  font-family: var(--lato-fonts);
+  font-family: var(--font-family-base);
   font-size: var(--body-font-size, 1.5rem);
   font-weight: var(--body-font-weight);
   font-style: normal;
