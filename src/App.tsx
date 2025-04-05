@@ -12,12 +12,14 @@ const sampleProduct = {
   originalPrice: 68.0,
   rating: 3.5,
   reviewCount: 126,
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
+  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut numquam ullam is recusandae laborum explicabo id sequi quisquam, ab sunt deleniti quidem ea animi facilis quod nostrum odit! Repellendus voluptas suscipit cum harum.",
   images: [
     productImage, 
     productImage,
     productImage
   ],
+  colors: ["Gray", "Black", "White"],
+  weights: [5, 3, 2],
 };
 
 function App() {

@@ -6,6 +6,8 @@ interface ProductProps {
   price: number;
   originalPrice: number;
   rating: number;
+  colors: string[];
+  weights: number[];
   reviewCount: number;
   description: string;
   onAddToCart: (quantity: number) => void;
@@ -17,11 +19,15 @@ const ProductRightPanel: React.FC<ProductProps> = ({
   price,
   originalPrice,
   rating,
+  colors,
+  weights,
   reviewCount,
   description,
   onAddToCart,
   onAddToWishlist,
 }) => {
+  const [selectedColor, setSelectedColor] = useState<string>(colors[0]);
+  const [selectedWeight, setSelectedWeight] = useState<number>(weights[0]);
   const [quantity, setQuantity] = useState<number>(1);
 
   return (
@@ -40,7 +46,36 @@ const ProductRightPanel: React.FC<ProductProps> = ({
 
       <p className="product-description">{description}</p>
 
+      <div className="product-options">
+        <div className="color-selection">
+          <span>Color: </span>
+          {colors.map((color, index) => (
+            <button
+              key={index}
+              className={color === selectedColor ? "selected" : ""}
+              onClick={() => setSelectedColor(color)}
+            >
+              {color}
+            </button>
+          ))}
+        </div>
+
+        <div className="weight-selection">
+          <span>Weight: </span>
+          {weights.map((weight, index) => (
+            <button
+              key={index}
+              className={weight === selectedWeight ? "selected" : ""}
+              onClick={() => setSelectedWeight(weight)}
+            >
+              {weight} kg
+            </button>
+          ))}
+        </div>
+      </div>
+
       <div className="quantity-selector">
+        <span>Qty: </span>
         <div className="quantity-box">
           <button onClick={() => setQuantity(quantity > 1 ? quantity - 1 : 1)}>-</button>
           <span className="quantity">{quantity}</span>

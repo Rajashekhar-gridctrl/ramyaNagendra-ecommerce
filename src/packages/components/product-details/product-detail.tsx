@@ -14,6 +14,7 @@ interface Product {
   description: string;
   images: string[];
   colors: string[];
+  weights: number[];
 }
 
 interface ProductDetailProps {
@@ -32,7 +33,7 @@ export const ProductDetail: React.FC<ProductDetailProps> = ({ product, onAddToCa
       <div className="product-image-section">
         
       <Zoom>
-        <img src={selectedImage} alt={product.name} />
+        <img src={selectedImage} alt={product.name} className='selected-image' />
       </Zoom>
         {/* <div 
           className={`main-image ${zoom ? "zoomed" : ""}`} 
@@ -62,6 +63,8 @@ export const ProductDetail: React.FC<ProductDetailProps> = ({ product, onAddToCa
         originalPrice={product.originalPrice}
         rating={product.rating}
         reviewCount={product.reviewCount}
+        colors={product.colors}
+        weights={product.weights}
         description={product.description}
         onAddToCart={onAddToCart}
         onAddToWishlist={onAddToWishlist}

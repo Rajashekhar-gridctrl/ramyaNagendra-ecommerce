@@ -19,18 +19,11 @@
       @media (max-width: 768px) {
         max-width: 100%;
       }
-
-      .product-image-container {
-        width: 100%;
-        max-width: 500px;
       
-        .inner-image-zoom {
-          border-radius: 12px;
-          border: 1px solid var(--border-color);
-        }
-      }
+      .selected-image {
+        max-width: 95%;
+      } 
       
-  
       .main-image {
         width: 100%;
         border-radius: 8px;
@@ -74,19 +67,14 @@
       @media (max-width: 768px) {
         max-width: 100%;
       }
-  
-      h1 {
-        font-size: 1.8rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
 
       .product-name {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
+        font-family: var(--font-family-heading);
       }
   
       .product-pricing {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         color: #e74c3c;
         font-weight: bold;
         
@@ -105,7 +93,7 @@
   
         .stars {
           color: #f39c12;
-          font-size: 1.2rem;
+          font-size: 2.4rem;
           margin-right: 8px;
         }
   
@@ -114,6 +102,29 @@
           color: gray;
         }
       }
+      .product-options {
+        margin-bottom: 15px;
+    
+        .color-selection, .weight-selection {
+          margin: 10px 0;
+          
+          button {
+            margin: 0 5px;
+            padding: 5px 10px;
+            border: 1px solid gray;
+            border-radius: 2px;
+            background: none;
+            cursor: pointer;
+            color: var(--bg-black-color);
+    
+            &.selected {
+              background-color: var(--primary-color);
+              font-weight: bold;
+              color: #fff;
+            }
+          }
+        }
+      }    
   
       .product-description {
         font-size: 1.5rem;
