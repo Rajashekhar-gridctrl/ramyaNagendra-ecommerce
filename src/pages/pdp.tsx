@@ -1,5 +1,5 @@
 import { ProductDetail } from "../components/ProductDetails/product-detail"
-import productImage from '../assets/products/Women bracelets/IMG-20250320-WA0450.jpg'
+import productImage from '../assets/products/IMG-20250320-WA0285.jpg'
 
 const sampleProduct = {
     id: "1",

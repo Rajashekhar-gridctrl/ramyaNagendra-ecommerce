@@ -12,42 +12,42 @@ export const data = [
         title: 'White stone neck set premium Quality',
         subTitle: 'Rs. 590.00',
         img: {
-            path: `src/assets/products/Bangles/IMG-20250320-WA0252.jpg`,
+            path: `/Bangles/IMG-20250320-WA0252.jpg`,
         }
     },
     {
         title: `Nakshi Nanu Patti with Lakshmi pendant`,
         subTitle: 'Rs. 590.00',
         img: {
-            path: 'src/assets/products/Short blackbeads/IMG-20250320-WA0364.jpg',
+            path: '/Short blackbeads/IMG-20250320-WA0364.jpg',
         }
     },
     {
         title: '5 star New design Neckset',
         subTitle: 'Rs. 490.00',
         img: {
-            path: 'src/assets/products/Women bracelets/IMG-20250320-WA0518.jpg',
+            path: '/Women bracelets/IMG-20250320-WA0518.jpg',
         }
     },
     {
         title: 'Short black beads-170RN100',
         subTitle: 'Rs. 390.00',
         img: {
-            path: 'src/assets/products/Short blackbeads/IMG-20250320-WA0408.jpg',
+            path: '/Short blackbeads/IMG-20250320-WA0408.jpg',
         }
     },
     {
         title: 'Baby bracelet',
         subTitle: 'Rs. 390.00',
         img: {
-            path: 'src/assets/products/Bangles/IMG-20250320-WA0268.jpg',
+            path: '/Bangles/IMG-20250320-WA0268.jpg',
         }
     },
     {
         title: 'Uncut pendant with chandraharam',
         subTitle: 'Rs. 590.00',
         img: {
-            path: 'src/assets/products/Women bracelets/IMG-20250320-WA0482.jpg',
+            path: '/Women bracelets/IMG-20250320-WA0482.jpg',
         }
     }
 ];
@@ -62,7 +62,7 @@ export const trendingProductsData = [
             reviews: 508,
         },
         img: {
-            path: 'src/assets/products/Bangles/IMG-20250320-WA0272.jpg',
+            path: '/Bangles/IMG-20250320-WA0272.jpg',
         }
     },
     {
@@ -74,7 +74,7 @@ export const trendingProductsData = [
             reviews: 188,
         },
         img: {
-            path: 'src/assets/products/Bangles/IMG-20250320-WA0244.jpg',
+            path: '/Bangles/IMG-20250320-WA0244.jpg',
         }
     },
     {
@@ -86,7 +86,7 @@ export const trendingProductsData = [
             reviews: 118,
         },
         img: {
-            path: 'src/assets/products/Bangles/IMG-20250320-WA0252.jpg',
+            path: '/Bangles/IMG-20250320-WA0252.jpg',
         }
     },
     {
@@ -98,7 +98,7 @@ export const trendingProductsData = [
             reviews: 138,
         },
         img: {
-            path: 'src/assets/products/Bangles/IMG-20250320-WA0268.jpg',
+            path: '/Bangles/IMG-20250320-WA0268.jpg',
         }
     },
     {
@@ -110,7 +110,7 @@ export const trendingProductsData = [
             reviews: 178,
         },
         img: {
-            path: 'src/assets/products/Short blackbeads/IMG-20250320-WA0420.jpg',
+            path: '/Short blackbeads/IMG-20250320-WA0420.jpg',
         }
     },
     {
@@ -122,7 +122,7 @@ export const trendingProductsData = [
             reviews: 108,
         },
         img: {
-            path:'src/assets/products/Short blackbeads/IMG-20250320-WA0426.jpg',
+            path:'/Short blackbeads/IMG-20250320-WA0426.jpg',
         }
     },
     {
@@ -134,7 +134,7 @@ export const trendingProductsData = [
             reviews: 128,
         },
         img: {
-            path: 'src/assets/products/Women bracelets/IMG-20250320-WA0502.jpg',
+            path: '/Women bracelets/IMG-20250320-WA0502.jpg',
         }
     },
     {
@@ -146,6 +146,6 @@ export const trendingProductsData = [
             reviews: 188,
         },
         img: {
-            path: 'src/assets/products/Women bracelets/IMG-20250320-WA0496.jpg',
+            path: '/Women bracelets/IMG-20250320-WA0496.jpg',
         }
     }]
