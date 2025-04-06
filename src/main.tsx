@@ -3,17 +3,12 @@ import { createRoot } from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/styles.scss';
 import './index.css';
-import Routes from './config/routes';
-import {
-  RouterProvider,
-} from "react-router";
-import { Header, Footer } from './packages';
+import { RouterProvider } from 'react-router';
+import { router } from './config/routes';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Header />
-    <RouterProvider router={Routes} />
-    <Footer />
+    <RouterProvider router={router} />
   </StrictMode>
 );
 

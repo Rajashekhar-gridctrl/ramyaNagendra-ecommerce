@@ -4,7 +4,13 @@ import styles from './BestSellers.module.scss';
 import { sliderSettingsHandler } from './BestSellers.data';
 
 interface IBestSellers {
-  products: any[];
+  products: {
+    img: {
+      path: string;
+    };
+    title: string;
+    subTitle: string;
+  }[];
 }
 
 export const BestSellers: FC<IBestSellers> = ({ products }) => {
@@ -15,20 +21,37 @@ export const BestSellers: FC<IBestSellers> = ({ products }) => {
     >
       <h2>Best Sellers{productsLength}</h2>
       <div className="container">
-        <Slider settings={sliderSettingsHandler(productsLength) as any}>
-          {products.map((_) => (
+        {products.length < 5 ? (
+         <div className='d-flex'>
+          {products.map(({ img, ...details }) => (
             <ProductCard isCollectionCard>
               <ProductCard.Thumbnail
                 loading="lazy"
-                src="https://ramyanagendra.com/cdn/shop/files/IMG_20241104_111307.jpg?v=1730716719&width=360"
+                src={img.path}
               />
               <ProductCard.collectionContent
-                title="White stone neck set premium Quality"
-                subTitle="25 Items"
+                title={details.title}
+                subTitle={details.subTitle}
+              />
+            </ProductCard>
+          ))}
+          </div>
+        ): (
+          <Slider settings={sliderSettingsHandler(productsLength) as any}>
+          {products.map(({ img, ...details }) => (
+            <ProductCard isCollectionCard>
+              <ProductCard.Thumbnail
+                loading="lazy"
+                src={img.path}
+              />
+              <ProductCard.collectionContent
+                title={details.title}
+                subTitle={details.subTitle}
               />
             </ProductCard>
           ))}
         </Slider>
+        )}
       </div>
     </article>
   );

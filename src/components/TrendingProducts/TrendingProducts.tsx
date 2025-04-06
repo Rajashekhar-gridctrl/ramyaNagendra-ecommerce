@@ -3,14 +3,22 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { ProductCard, useBreakpoint } from '../../packages';
+import { TrendingProductsMobile } from './TrendingProdcutsMobile';
+import mangnifier from '../../assets/svg/mangnifier.svg';
 import styles from './TrendingProducts.module.scss';
 
-import productImg from '../../assets/products/IMG-20250320-WA0285.jpg';
-import mangnifier from '../../assets/svg/mangnifier.svg';
-import { TrendingProductsMobile } from './TrendingProdcutsMobile';
 
 export interface ITrendingProducts {
-  products: any[];
+  products: {
+    img: {
+      path: string;
+    },
+    content: {
+      title: string;
+      price: string;
+      oldPrice: string;
+    }
+  }[];
 }
 
 export const TrendingProducts: FC<ITrendingProducts> = ({ products }) => {
@@ -26,12 +34,12 @@ export const TrendingProducts: FC<ITrendingProducts> = ({ products }) => {
         <Row
           className={`${styles.tredingProductsWrapper} container mb-5 pb-5 mt-5`}
         >
-          {products.slice(0, 8).map(() => (
+          {products.slice(0, 8).map(({ img, content }) => (
             <Col xs={12} md={4} xl={3} className="mb-5">
               <ProductCard>
-                <ProductCard.Thumbnail src={productImg} />
+                <ProductCard.Thumbnail src={img.path} />
                 <ProductCard.Btn label="Add to cart" />
-                <ProductCard.Content />
+                <ProductCard.Content {...content} />
                 <ProductCard.Action>
                   <ProductCard.IconCta>
                     <img src={mangnifier} />

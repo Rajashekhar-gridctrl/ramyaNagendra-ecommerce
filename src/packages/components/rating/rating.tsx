@@ -3,9 +3,10 @@ import styles from './rating.module.scss';
 interface IRating {
   totalCount?: number;
   fill: number;
+  reviews: number;
 }
 
-export const Rating: React.FC<IRating> = ({ fill = 0, totalCount = 5 }) => {
+export const Rating: React.FC<IRating> = ({ fill = 0, totalCount = 5, reviews = 100 }) => {
   if (fill > totalCount) return null;
   const ratings = [
     ...new Array(Math.max(fill, 0)).fill(1),
@@ -48,7 +49,7 @@ export const Rating: React.FC<IRating> = ({ fill = 0, totalCount = 5 }) => {
           </span>
         </li>
       ))}{' '}
-      <div className={styles['rating__review--text']}>(126) Review</div>
+      <div className={styles['rating__review--text']}>({reviews}) Review</div>
     </ul>
   );
 };

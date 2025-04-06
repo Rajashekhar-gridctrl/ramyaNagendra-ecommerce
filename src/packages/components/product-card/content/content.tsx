@@ -2,16 +2,24 @@ import { FC } from 'react';
 import { Rating } from '../../rating/rating';
 import styles from './content.module.scss';
 
-export const ProductCardContent: FC = () => {
+export interface IProductCardContent {
+  title: string;
+  price: string;
+  oldPrice: string;
+  rating?: number;
+  reviews?: number;
+}
+
+export const ProductCardContent: FC<IProductCardContent> = ({ title, price, oldPrice, rating = 5, reviews = 5 }) => {
   return (
     <div className={`${styles.content} text-center`}>
-      <Rating fill={1} totalCount={5} />
+      <Rating fill={rating} totalCount={5} reviews={reviews} />
       <h3 className={styles['content--title']}>
-        Z 7-8mm Freshwater Button is{' '}
+        {title}
       </h3>
       <div className={styles['content--price']}>
-        <span className={styles.current__price}>$239.52</span>
-        <span className={styles.old__price}> $362.00</span>
+        <span className={styles.current__price}>{price}</span>
+        <span className={styles.old__price}>{oldPrice}</span>
       </div>
     </div>
   );

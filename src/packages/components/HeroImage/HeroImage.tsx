@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Slider } from '../../packages';
+import { Slider } from '../..';
 
 interface IHeroImage {
   banners: any[];

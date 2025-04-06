@@ -8,7 +8,11 @@
 
   &__isCollectionCard {
     max-width: 270px;
-
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 270px;
+    max-height: 270px;
+    border-radius: 10px;
     img {
       margin: 0 auto 1.2rem;
       max-width: 150px;
