@@ -12,42 +12,42 @@ export const data = [
         title: 'White stone neck set premium Quality',
         subTitle: 'Rs. 590.00',
         img: {
-            path: `${IMG_BASE_PATH}/a89ae3a2-853c-4c9c-8f65-3d26e61314bb.jpg?v=1727257055&width=360`,
+            path: `src/assets/products/Bangles/IMG-20250320-WA0252.jpg`,
         }
     },
     {
         title: `Nakshi Nanu Patti with Lakshmi pendant`,
         subTitle: 'Rs. 590.00',
         img: {
-            path: `${IMG_BASE_PATH}/IMG_20240909_225927.jpg?v=1725903431&width=360`,
+            path: 'src/assets/products/Short blackbeads/IMG-20250320-WA0364.jpg',
         }
     },
     {
         title: '5 star New design Neckset',
         subTitle: 'Rs. 490.00',
         img: {
-            path: `${IMG_BASE_PATH}/a0662090-f042-4412-8a87-396c84b979d4.jpg?v=1725533152&width=360`,
+            path: 'src/assets/products/Women bracelets/IMG-20250320-WA0518.jpg',
         }
     },
     {
         title: 'Short black beads-170RN100',
         subTitle: 'Rs. 390.00',
         img: {
-            path: `${IMG_BASE_PATH}/IMG_20241019_135436.jpg?v=1729326295&width=360`,
+            path: 'src/assets/products/Short blackbeads/IMG-20250320-WA0408.jpg',
         }
     },
     {
         title: 'Baby bracelet',
         subTitle: 'Rs. 390.00',
         img: {
-            path: `${IMG_BASE_PATH}/IMG_20241128_160905.jpg?v=1732790380&width=360`,
+            path: 'src/assets/products/Bangles/IMG-20250320-WA0268.jpg',
         }
     },
     {
         title: 'Uncut pendant with chandraharam',
         subTitle: 'Rs. 590.00',
         img: {
-            path: `${IMG_BASE_PATH}/8rn2001.jpg?v=1725452655&width=360`,
+            path: 'src/assets/products/Women bracelets/IMG-20250320-WA0482.jpg',
         }
     }
 ];
@@ -62,7 +62,7 @@ export const trendingProductsData = [
             reviews: 508,
         },
         img: {
-            path: `${IMG_BASE_PATH}/IMG-20250107-WA0002.jpg?v=1736229320&width=360`,
+            path: 'src/assets/products/Bangles/IMG-20250320-WA0272.jpg',
         }
     },
     {
@@ -74,7 +74,7 @@ export const trendingProductsData = [
             reviews: 188,
         },
         img: {
-            path: `${IMG_BASE_PATH}/IMG_20241011_192253.jpg?v=1741863914&width=360`,
+            path: 'src/assets/products/Bangles/IMG-20250320-WA0244.jpg',
         }
     },
     {
@@ -86,7 +86,7 @@ export const trendingProductsData = [
             reviews: 118,
         },
         img: {
-            path: `${IMG_BASE_PATH}/IMG_20241028_103944.jpg?v=1730092510&width=360`,
+            path: 'src/assets/products/Bangles/IMG-20250320-WA0252.jpg',
         }
     },
     {
@@ -98,7 +98,7 @@ export const trendingProductsData = [
             reviews: 138,
         },
         img: {
-            path: `${IMG_BASE_PATH}/IMG_20241024_115838.jpg?v=1729751800&width=360`,
+            path: 'src/assets/products/Bangles/IMG-20250320-WA0268.jpg',
         }
     },
     {
@@ -110,7 +110,7 @@ export const trendingProductsData = [
             reviews: 178,
         },
         img: {
-            path: `${IMG_BASE_PATH}/IMG_20241227_142222.jpg?v=1735296097&width=360`,
+            path: 'src/assets/products/Short blackbeads/IMG-20250320-WA0420.jpg',
         }
     },
     {
@@ -122,7 +122,7 @@ export const trendingProductsData = [
             reviews: 108,
         },
         img: {
-            path: `${IMG_BASE_PATH}/WhatsAppImage2024-08-21at9.19.57PM.jpg?v=1724295344&width=360`,
+            path:'src/assets/products/Short blackbeads/IMG-20250320-WA0426.jpg',
         }
     },
     {
@@ -134,7 +134,7 @@ export const trendingProductsData = [
             reviews: 128,
         },
         img: {
-            path: `${IMG_BASE_PATH}/IMG_20241108_152422.jpg?v=1731059700&width=360`,
+            path: 'src/assets/products/Women bracelets/IMG-20250320-WA0502.jpg',
         }
     },
     {
@@ -146,6 +146,6 @@ export const trendingProductsData = [
             reviews: 188,
         },
         img: {
-            path: `${IMG_BASE_PATH}/IMG_20241022_202029.jpg?v=1729675429&width=360`,
+            path: 'src/assets/products/Women bracelets/IMG-20250320-WA0496.jpg',
         }
     }]

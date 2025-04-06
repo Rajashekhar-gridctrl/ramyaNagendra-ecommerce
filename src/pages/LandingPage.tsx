@@ -9,7 +9,7 @@ function LandingPage() {
       <HeroImage banners={banners} />
       <section className="container-fluid p-0">
         <BestSellers products={data} />
-        <TrendingProducts products={trendingProductsData} />
+        <TrendingProducts products={trendingProductsData} heading='TRENDING PRODUCTS' />
         <Testimonials />
       </section>
     </>

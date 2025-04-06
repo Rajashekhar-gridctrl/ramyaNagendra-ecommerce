@@ -177,8 +177,8 @@ export const Header: FC = () => {
                                     </li>
                                     <li className="header__menu--items">
                                         <Link className="header__mega--sub__menu--title" to={{
-                                            pathname: "/"
-                                        }}>Accesories
+                                            pathname: "/categories"
+                                        }}>Categories
                                         </Link>
                                     </li>
                                     <li className="header__menu--items">

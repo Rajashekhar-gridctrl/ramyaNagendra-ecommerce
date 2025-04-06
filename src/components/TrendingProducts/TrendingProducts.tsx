@@ -9,6 +9,7 @@ import styles from './TrendingProducts.module.scss';
 
 
 export interface ITrendingProducts {
+  heading?: string;
   products: {
     img: {
       path: string;
@@ -21,13 +22,13 @@ export interface ITrendingProducts {
   }[];
 }
 
-export const TrendingProducts: FC<ITrendingProducts> = ({ products }) => {
+export const TrendingProducts: FC<ITrendingProducts> = ({ products, heading }) => {
   const breakPoint = useBreakpoint();
   return (
     <Container
       className={`${styles.tredingProductsWrapper} mt-5 pt-5 mb-5 pb-5 mt-5`}
     >
-      <h2>TRENDING PRODUCTS</h2>
+      {heading && <h2>{heading}</h2>}
       {breakPoint === 'xs' ? (
         <TrendingProductsMobile products={products} />
       ) : (

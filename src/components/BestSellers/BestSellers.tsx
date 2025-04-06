@@ -19,7 +19,7 @@ export const BestSellers: FC<IBestSellers> = ({ products }) => {
     <article
       className={`${styles.BestSellersWrapper} container mb-5 pb-5 mt-5`}
     >
-      <h2>Best Sellers{productsLength}</h2>
+      <h2>Best Sellers</h2>
       <div className="container">
         {products.length < 5 ? (
          <div className='d-flex'>
