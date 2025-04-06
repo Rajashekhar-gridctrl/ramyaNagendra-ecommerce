@@ -1,0 +1,12 @@
+.testimonial__bg{
+    background-color: #bdbdbd;
+    margin-bottom: 8rem;
+    > div {
+        gap: 20px;
+    }
+}
+.testimonial__section{
+    &--inner{
+        padding-bottom: 5rem;
+    }
+}

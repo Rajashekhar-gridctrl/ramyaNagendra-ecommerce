@@ -7,12 +7,13 @@ import Routes from './config/routes';
 import {
   RouterProvider,
 } from "react-router";
-import { Header } from './packages';
+import { Header, Footer } from './packages';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Header />
     <RouterProvider router={Routes} />
+    <Footer />
   </StrictMode>
 );
 
